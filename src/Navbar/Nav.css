@@ -1,0 +1,63 @@
+/* #4e774f -Light Green*/
+/* #153331 - Dark Green */
+/* #e7b24a  -Yellow  Should Be Text Color*/
+
+
+.e-com_nav {
+  width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  background-image: linear-gradient(#4e774f, #153331);
+  color: #e7b24a;
+  box-shadow: 2px 2px 50px grey;
+}
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.nav_li {
+  padding: 15px;
+  position: relative;
+}
+.nav_li::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 0px;
+  height: 4px;
+  bottom: -5px;
+  transform: translateX(-50%);
+  transition: 0.5s;
+  left: 50%;
+}
+.nav_li:hover::after {
+  content: "";
+  width: 100px;
+}
+.nav_li {
+  text-decoration: none;
+  list-style: none;
+  font-size: 20px;
+}
+.navbar li a {
+  text-decoration: none;
+  color: white;
+ }
+ .signin_login {
+
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+}
+.logo{
+  width: 70px;
+  margin-top: 8px;
+  margin-left: 30px;
+  height: 70px;
+  border-radius: 50%;
+}

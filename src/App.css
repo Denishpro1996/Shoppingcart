@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Aboreto', cursive;
+}
+
+/* #4e774f -Light Green*/
+/* #153331 - Dark Green */
+/* #e7b24a  -Yellow  Should Be Text Color*/
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  background-image: linear-gradient(#4e774f, #153331);
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* ================SignUp==================== */
+
+.signup_container {
+  border: 4px solid black;
+  height: 84.5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .subContainer{
+  height:80vh;
+  width: 50vw;
+  border: 2px solid black;
+} */
+.addcontainer {
+  width: 50%;
+  height: 100%;
+}
+
+.addcontainer img {
+  width: 100%;
+  height: 100%;
+}
+
+.registration_form {
+  width: 50%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.836), grey, white);
+}
+
+.signup_form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_input {
+  width: 50%;
+  padding: 10px;
+  margin: 20px 0;
+  outline: none;
+  border-radius: 10px;
+}
+::-webkit-input-placeholder {
+  padding: 15px;
+  font-size: 20px;
+}
+.form_btn {
+  width: 25%;
+  padding: 10px;
+  margin: 20px 0;
+  outline: none;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.726);
+  color: white;
+  font-size: 20px;
+}
+
+.form_btn:hover {
+  transform: scale(0.95, 0.95);
+}
+
+/* ==============LogIn Page=============== */
+.login_page_container {
+  width: 100%;
+  height: 83vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login_subcontainer {
+  height: 80vh;
+  width: 50vw;
+  display: flex;
+  box-shadow: 2px 2px 15px black;
+  border-radius: 15px;
+}
+
+.img_container {
+  width: 35%;
+  height: 100%;
+  box-sizing: border-box;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+}
+
+.img_container h1 {
+  text-align: center;
+}
+
+.img_container>img {
+  width: 100%;
+  height: 40%;
+  border-radius: 20px;
+}
+
+.form_container {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form_container input {
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 1px solid black;
+  width: 60%;
+  outline: none;
+  background: none;
+}
+
+.form_container h4 {
+  color: red;
+}
+
+._frm_btn {
+  width: 40%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #4e774f6c;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+}
+
+._frm_btn:hover {
+  transform: scale(0.9, 0.9);
+}
+
+._frm_otp {
+  width: 40%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: none;
+  border-bottom: 1px solid black;
+  font-size: 15px;
+}
+
+._frm_otp:hover {
+  background-color: rgba(255, 0, 0, 0.253);
+  cursor: pointer;
+}
+
+/* ========================Product Page======================= */
+
+.searchbar{
+  width: 40%;
+  padding: 10px;
+  border-radius: 3px;
+  margin: 10px;
+  outline: none;
+  border: none;
+  box-shadow: 2px 2px 5px grey;
+}
+.products_container {
+  width: 100%;
+  height: 82vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image_container {
+  width: 50%;
+  height: 80.5vh;
+}
+
+.image_container img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.form_container2 {
+  width: 50%;
+  height: 80.5vh;
+  border-left: 5px solid green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.error_span{
+  color: red;
+  display:flex;
+  justify-content: flex-start;
+  width: 50%;
+  font-size: 15px;
+}
+/* ====================Product List================== */
+.product_table{
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: scroll;
+}
+.product_table ul{
+  display: flex;
+}
+.product_table ul li{
+  list-style: none;
+  width: 200px;
+  border: 1px solid black;
+  text-align: center;
+  font-weight: 900;
+  padding: 10px;
+}
+.product{
+  overflow: scroll;
+}
+::-webkit-scrollbar{
+  background: none;
+}
+.btns{
+  display: flex;
+  justify-content: space-around;
+}
+.btns a{
+  text-decoration: none;
+}
